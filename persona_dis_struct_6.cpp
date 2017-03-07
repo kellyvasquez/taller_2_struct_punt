@@ -24,7 +24,27 @@ int main(){
         }else{
             pers[i].discapacidad=false; }
         printf("\n-------------------------------------------\n\n");
+    } system("cls");
+
+    int cond[30], sind[30], con=0, sin=0;
+    for(int i=0;i<cant;i++){
+        if(pers[i].discapacidad==true)
+        {   cond[con]=i;
+            con++;
+        }else{
+            sind[sin]=i;
+            sin++; }
     }
+
+    printf("**********PERSONAS CON DISCAPACIDAD**********\n\n");
+    for(int i=0;i<con;i++) {
+        printf("Nombre: %s", pers[cond[i]].nombre);
+        printf("\n"); }
+
+    printf("\n**********PERSONAS SIN DISCAPACIDAD**********\n");
+    for(int i=0;i<sin;i++){
+        printf("Nombre: %s",pers[sind[i]].nombre);
+        printf("\n"); }
 
     return 0;
 }
