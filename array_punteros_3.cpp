@@ -26,6 +26,6 @@ void par(int *p){
     printf("\nLos numeros pares y su posicion de memoria son: \n\n");
     for (int i=0;i<10;i++){
         if (*(p+i)%2==0){
-            printf(" %d es par y su posicion de memoria es %p\n",*(p+i),(p+i));*(p+i); }
+            printf(" %d es par y su posicion de memoria es %p\n",*(p+i),(p+i)); }
     }
 }
